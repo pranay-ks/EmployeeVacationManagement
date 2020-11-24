@@ -1,0 +1,39 @@
+.modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    box-shadow: rgba(0,0,0,0.4) 10px 10px 4px;
+    background-color: lightblue;
+    border: 5px solid #5e5d5d;
+    box-shadow: 0 2px 16px white;
+    padding: 3rem;
+    font-size: 2rem;
+}
+.modal h1{
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: greenyellow;
+    margin: 0 auto;
+}
+.modal-input
+{
+    margin-top: 1rem;
+}
+.model-input > input{
+    border: 1px solid green;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.modal-actions button{
+    background-color: green;
+    padding: 8px;
+    margin: 8px 1rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.modal-action button:focus{
+    outline: none;
+}

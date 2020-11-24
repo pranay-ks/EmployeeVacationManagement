@@ -1,0 +1,23 @@
+<div class="modal" *ngIf="isModelDisplayed">
+    <h1>{{modalTitle}}</h1>
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="modal-input">
+            <label for="days">Number of days</label>
+            <input type="text" 
+            id="days" 
+            name="days" 
+            ngModel 
+            required
+            #days="ngModel">
+            <p style="color: red;font-size: 20px;text-align: center;" *ngIf="!days.valid && days.touched">Please enter valid no of days</p>
+        </div>
+        <div class="modal-actions">
+            <button type="submit">Submit</button>
+            <button type="button" (click)="cancel()">Cancel</button>
+        </div>
+    </form>
+    <div class="alert alert-success alert-dismissible fade show mb-2" *ngIf="failure">
+        <p style="color: red;">Invalid No Of Days</p>
+        <button type="button" (click)="onClose()">close</button>
+    </div>
+</div>

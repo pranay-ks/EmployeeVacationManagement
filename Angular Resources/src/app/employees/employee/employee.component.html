@@ -1,0 +1,16 @@
+<article class="employee">
+    <p class="type">{{employeeType}}</p>
+    <p>Employee Name:{{employee.name}}</p>
+    <p>Number Of Days {{employee.name}} worked:{{employee.noOfDaysWorked}}</p>
+    <p>Number Of vacation days available for {{employee.name}}:{{employee.noOfVacationDays}}</p>
+
+    <div class="employee-actions">
+        <button type="button" (click)="onSet({id:employee.employeeId,modalTitle:'Working Days',isModalDisplayed:true})">Set Working Days</button>
+        <button type="button" (click)="onSet({id:employee.employeeId,modalTitle:'Vacation Days',isModalDisplayed:true})"> Vacation Days Taken</button>
+    </div>
+</article>  
+
+
+
+
+
